@@ -1,0 +1,25 @@
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 200px auto;
+}
+
+.loading::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 8px solid rgb(231, 228, 228);
+    border-top-color: rgb(17, 17, 17);
+    border-bottom-color: rgb(17, 17, 17);
+    border-radius: 50px;
+    animation: loading 0.5s ease infinite;
+    color: transparent;
+}
+
+@keyframes loading {
+   to{
+       transform: rotate(1turn);
+   }
+}
